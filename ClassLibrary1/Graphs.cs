@@ -271,6 +271,7 @@ namespace Graph
         }
 
         public List<List<int>> RemoveCycle( List<List<int>> answ)
+        //метод RemoveCycle удаления найденных повторяющихся циклов;
         {
             for (int i = 0; i < answ.Count - 1; i++)
             {
@@ -301,6 +302,7 @@ namespace Graph
         //3213
 
         static bool CirclesEqual(List<int> list1, List<int> list2)
+        //метод CirclesEqual проверки на совпадение циклов посимвольно в прямом порядке;
         {
             if (list1.Count != list2.Count) return false;
             else
@@ -327,6 +329,7 @@ namespace Graph
             }
         }
         static bool CirclesEqual2(List<int> list1, List<int> list2)
+        //метод CirclesEqual проверки на совпадение циклов посимвольно в обратном порядке;
         {
             if (list1.Count != list2.Count) return false;
             else
